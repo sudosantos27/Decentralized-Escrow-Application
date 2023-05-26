@@ -1,3 +1,4 @@
+// Escrow component
 export default function Escrow({
   address,
   arbiter,
@@ -5,6 +6,7 @@ export default function Escrow({
   value,
   handleApprove,
 }) {
+  // Render the Escrow component
   return (
     <div className="existing-contract">
       <ul className="fields">
@@ -25,7 +27,7 @@ export default function Escrow({
           id={address}
           onClick={(e) => {
             e.preventDefault();
-
+            // Call the handleApprove function when the button is clicked
             handleApprove();
           }}
         >

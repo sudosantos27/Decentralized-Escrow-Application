@@ -1,3 +1,37 @@
+# Decentralized Escrow Application - Alchemy Ethereum Developer Bootcamp - Week 5 Project
+
+The Decentralized Escrow Application is a blockchain-based application that enables secure and trustless transactions using an escrow mechanism. The application leverages the Ethereum blockchain and smart contracts to facilitate transactions between parties, providing transparency and security.
+
+The main features of the application include:
+
+- Creation of new escrow contracts with designated arbiter, beneficiary, and deposit amount.
+- Approval process by the arbiter to release funds to the beneficiary.
+- Display of existing escrow contracts with relevant details.
+- User interface for interacting with the escrow contracts.
+
+## Smart Contract
+
+The smart contract `Escrow.sol` serves as the escrow agreement. It includes the following key functionalities:
+
+- Contract initialization with the arbiter, beneficiary, and depositor addresses.
+- Approval function triggered by the arbiter to release funds to the beneficiary.
+- Event emission upon successful approval.
+
+## Project Structure
+
+The project is structured as follows:
+
+- `addContract.js`: Provides a function to add a new escrow contract to the user interface.
+- `deploy.js`: Includes a function to deploy the Escrow smart contract.
+- `App.js`: React component that represents the main application logic and user interface.
+- `Escrow.js`: React component for displaying individual escrow contracts.
+- `index.js`: Entry point of the application, renders the App component.
+- Other supporting files and dependencies.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 # Decentralized Escrow Application
 
 This is an Escrow Dapp built with [Hardhat](https://hardhat.org/).
